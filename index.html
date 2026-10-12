@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="seven2762의 순수 HTML, CSS, JavaScript 개발 포트폴리오"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>seven2762 — Developer Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/theme.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="site-header" id="header">
+      <nav class="container navigation" aria-label="주요 메뉴">
+        <a href="#home" class="logo" aria-label="홈"
+          ><span class="logo-mark">s.</span> seven2762<span class="logo-dot"
+            >●</span
+          ></a
+        >
+        <div class="nav-actions">
+          <ul class="nav-links" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact ↗</a></li>
+          </ul>
+          <button
+            class="icon-button"
+            id="theme-toggle"
+            aria-label="다크 모드 켜기"
+            aria-pressed="false"
+          >
+            <span id="theme-icon" aria-hidden="true">☾</span></button
+          ><button
+            class="icon-button menu-toggle"
+            id="menu-toggle"
+            aria-label="메뉴 열기"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> LEARNING, BUILDING, GROWING
+          </p>
+          <h1 id="hero-title">
+            작은 아이디어를<br /><span>동작하는 경험으로.</span>
+          </h1>
+          <p class="hero-description">
+            안녕하세요, <strong>seven2762</strong>입니다.<br />웹의 기본부터
+            차근차근, 직접 만들며 배웁니다.<br />사용자와 소통하는 웹을 만들어
+            가고 있습니다.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#projects">프로젝트 둘러보기 ↗</a
+            ><a class="button secondary" href="#contact">이야기 나누기 →</a>
+          </div>
+          <div class="hero-meta">
+            <span>HTML · CSS · JavaScript</span><span class="meta-rule"></span
+            ><span>Built from scratch</span>
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          role="img"
+          aria-label="웹을 만드는 과정을 표현한 코드 일러스트"
+        >
+          <span class="orbit orbit-one"></span
+          ><span class="orbit orbit-two"></span>
+          <div class="code-window">
+            <div class="window-bar">
+              <span></span><span></span><span></span
+              ><small>hello-world.js</small>
+            </div>
+            <div class="code-content">
+              <p><span class="code-purple">const</span> developer = {</p>
+              <p>&nbsp; name: <span class="code-green">'seven2762'</span>,</p>
+              <p>&nbsp; loves: [<span class="code-green">'building'</span>,</p>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="code-green">'learning'</span>],
+              </p>
+              <p>&nbsp; curiosity: <span class="code-yellow">Infinity</span></p>
+              <p>};</p>
+              <p class="code-comment">// one step at a time.</p>
+              <p>
+                developer.<span class="code-purple">build</span>();<span
+                  class="cursor"
+                  >▍</span
+                >
+              </p>
+            </div>
+          </div>
+          <span class="floating-tag tag-html">&lt;/&gt; <b>HTML</b></span
+          ><span class="floating-tag tag-css"># <b>CSS</b></span
+          ><span class="floating-tag tag-js">{ } <b>JavaScript</b></span
+          ><span class="sparkle" aria-hidden="true">✳</span>
+        </div>
+        <a href="#about" class="scroll-cue"><span>↓</span> SCROLL TO EXPLORE</a>
+      </section>
+      <section
+        class="section about-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="container about-layout reveal">
+          <div class="profile-frame">
+            <img
+              src="images/profile.png"
+              alt="seven2762의 GitHub 프로필 이미지"
+              width="320"
+              height="320"
+              loading="lazy"
+            />
+            <div class="profile-caption">
+              <span class="status-dot"></span> Always a work in progress
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow">01 / ABOUT ME</p>
+            <h2 id="about-title">만들면서 배우는 개발자.</h2>
+            <p class="section-description">
+              한 줄의 코드가 화면의 변화로 이어지는 순간을 좋아합니다. HTML로
+              구조를 잡고, CSS로 표현하고, JavaScript로 생명을 더하는 과정을
+              직접 탐구하고 있습니다.
+            </p>
+            <p class="section-description">
+              이 포트폴리오는 그 배움의 기록입니다. 작은 기능도 왜 동작하는지
+              이해하고, 누구나 편하게 사용할 수 있는 웹을 만드는 것이
+              목표입니다.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/seven2762"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub에서 더 알아보기 ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section container"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">02 / MY TOOLKIT</p>
+            <h2 id="skills-title">탄탄한 기본, 더 넓은 가능성.</h2>
+          </div>
+          <p>지금 집중해서 배우고 있는 기술들입니다.</p>
+        </div>
+        <div class="skills-grid reveal">
+          <article class="skill-card">
+            <span class="skill-icon html-icon" aria-hidden="true"
+              >&lt;/&gt;</span
+            >
+            <h3>HTML5</h3>
+            <p>의미 있는 구조</p>
+            <ul>
+              <li>시맨틱 마크업</li>
+              <li>접근성과 폼 구조</li>
+            </ul>
+            <span class="skill-note">STRUCTURE</span>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon css-icon" aria-hidden="true">#</span>
+            <h3>CSS3</h3>
+            <p>어떤 화면에서도 자연스럽게</p>
+            <ul>
+              <li>Flexbox & Grid</li>
+              <li>반응형 레이아웃과 테마</li>
+            </ul>
+            <span class="skill-note">PRESENTATION</span>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon js-icon" aria-hidden="true">JS</span>
+            <h3>JavaScript</h3>
+            <p>상호작용하는 경험</p>
+            <ul>
+              <li>DOM과 이벤트 처리</li>
+              <li>비동기 통신과 상태 관리</li>
+            </ul>
+            <span class="skill-note">INTERACTION</span>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon git-icon" aria-hidden="true">⑂</span>
+            <h3>Git & GitHub</h3>
+            <p>변화를 기록하고 공유하기</p>
+            <ul>
+              <li>버전 관리</li>
+              <li>GitHub API & Pages</li>
+            </ul>
+            <span class="skill-note">COLLABORATION</span>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">03 / SELECTED WORK</p>
+              <h2 id="projects-title">코드로 남긴 발자국.</h2>
+            </div>
+            <a
+              class="text-link"
+              href="https://github.com/seven2762?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              >모든 저장소 보기 ↗</a
+            >
+          </div>
+          <div class="projects-toolbar">
+            <p>
+              <span class="status-dot"></span> Live from GitHub
+              <span id="project-count"></span>
+            </p>
+            <div class="filters" aria-label="프로젝트 필터">
+              <button
+                class="filter-button active"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                전체</button
+              ><button
+                class="filter-button"
+                data-filter="original"
+                aria-pressed="false"
+              >
+                직접 만든 저장소
+              </button>
+            </div>
+          </div>
+          <div id="projects-content" aria-live="polite" aria-busy="true">
+            <div class="state-panel">
+              <span class="spinner" aria-hidden="true"></span>
+              <p>프로젝트를 불러오는 중입니다…</p>
+            </div>
+          </div>
+          <p class="api-note">
+            공개 저장소를 최근 업데이트 순으로 최대 6개 표시합니다.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section container"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-layout reveal">
+          <div>
+            <p class="eyebrow">04 / GET IN TOUCH</p>
+            <h2 id="contact-title">좋은 대화는<br />작은 인사에서.</h2>
+            <p class="section-description">
+              프로젝트에 대한 의견이나 함께 나누고 싶은<br />이야기가 있다면
+              메시지를 작성해 보세요.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/seven2762"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub 프로필 방문하기 ↗</a
+            >
+            <div class="contact-note">
+              <span>↗</span>
+              <p>
+                이 폼은 입력 검증을 체험하는 데모입니다.<br />작성한 메시지는
+                외부로 전송되지 않습니다.
+              </p>
+            </div>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">이름 <span>*</span></label
+                ><input
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="이름을 입력해 주세요"
+                  required
+                  maxlength="80"
+                  aria-describedby="name-error"
+                />
+                <p class="field-error" id="name-error"></p>
+              </div>
+              <div class="field">
+                <label for="email">이메일 <span>*</span></label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="hello@example.com"
+                  required
+                  maxlength="254"
+                  aria-describedby="email-error"
+                />
+                <p class="field-error" id="email-error"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">메시지 <span>*</span></label
+              ><textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="어떤 이야기를 나누고 싶으신가요?"
+                required
+                maxlength="2000"
+                aria-describedby="message-error"
+              ></textarea>
+              <p class="field-error" id="message-error"></p>
+            </div>
+            <button class="button primary submit-button" type="submit">
+              메시지 확인하기 ↗
+            </button>
+            <p id="form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="logo" href="#home"
+          ><span class="logo-mark">s.</span> seven2762</a
+        >
+        <p>© <span id="year">2026</span> seven2762. Built with curiosity.</p>
+        <a
+          href="https://github.com/seven2762"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        >
+      </div>
+    </footer>
+    <button
+      class="back-top icon-button"
+      id="back-top"
+      aria-label="페이지 맨 위로 이동"
+      hidden
+    >
+      ↑</button
+    ><noscript
+      ><p class="noscript-note">
+        JavaScript를 켜면 테마 전환, 프로젝트 목록과 폼 검증을 사용할 수
+        있습니다.
+      </p></noscript
+    >
+  </body>
+</html>
